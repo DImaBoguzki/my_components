@@ -1,0 +1,36 @@
+.img-input-dima {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  cursor:pointer;
+  input[type=file]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor:pointer;
+  }
+  .upload-icon{
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+  }
+  .upload-img{
+    width: 90%;
+    height: 90%;
+    box-shadow: 1px 1px 4px #999;
+    transition: transform 300ms;
+    padding: 1px;
+  }
+  &:hover{
+    .upload-img{
+      position: relative;
+      transform: scale(3);
+    }
+  }
+}
